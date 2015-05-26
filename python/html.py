@@ -4,6 +4,7 @@ from __future__ import print_function
 
 from markdown import markdown
 from jinja2 import Template
+from bs4 import BeautifulSoup
 
 import sys, os, datetime, re, argparse
 
@@ -93,7 +94,7 @@ class Render(object):
           <body>
             <article class="markdown-body">
               <div class="title">
-                <span>Updated: {{ date }}</span>
+                <p>{{ date }}</p>
                 <h1>{{ title }}</h1>
               </div>
 
@@ -116,8 +117,10 @@ class Render(object):
         return base
 
     def write_html(self, file, text):
+        soup = BeautifulSoup(text)
+        prettyHTML = soup.prettify()
         with open(file, 'w') as f:
-            print(text, file=f)
+            print(prettyHTML, file=f)
 
     def generate_html(self, html=None):
         if html is None:
