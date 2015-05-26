@@ -1,0 +1,32 @@
+---
+title: Howdy!
+date: 2015-05-31
+tags: foo, bar
+---
+
+# Hello There!
+
+This a R Markdown document.
+
+```{r echo=TRUE}
+x <- seq(0, 10)
+y <- seq(0, 10)
+```
+
+Here is the plot
+
+```{r simple_fig, fig.width=7, include=TRUE, echo=TRUE}
+plot(1:10)
+```
+
+Here is some python:
+
+```python
+print "Dude"
+```
+
+Here is some math
+
+$$ \pi = \frac{C}{d} $$
+
+And we're done!  Bye!
