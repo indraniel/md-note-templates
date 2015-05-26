@@ -88,13 +88,13 @@ class Render(object):
             <meta http-equiv="content-type" content="text/html; charset=UTF-8">
             <title>{{ title }}</title>
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-            <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/indraniel/md-note-templates/master/css/github-markdown.css" />
-            <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/indraniel/md-note-templates/master/css/github-highlight.css" />
+            <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/indraniel/md-note-tools/master/css/github-markdown.css" />
+            <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/indraniel/md-note-tools/master/css/github-highlight.css" />
           </head>
           <body>
             <article class="markdown-body">
               <div class="title">
-                <p>{{ date }}</p>
+                <span>Updated: {{ date }}</span>
                 <h1>{{ title }}</h1>
               </div>
 
@@ -109,7 +109,7 @@ class Render(object):
             <script type="text/javascript"
               src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
               </script>
-            <script src="https://cdn.rawgit.com/indraniel/md-note-templates/master/js/highlight.pack.js" type="text/javascript"></script>
+            <script src="https://cdn.rawgit.com/indraniel/md-note-tools/master/js/highlight.pack.js" type="text/javascript"></script>
             <script>hljs.initHighlightingOnLoad();</script>
           </body>
         </html>
