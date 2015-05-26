@@ -1,4 +1,4 @@
-# md-note-templates
+# md-note-tools
 
 CSS and JavaScript templates to use for rendering my markdown-based notes
 
