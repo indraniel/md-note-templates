@@ -5,6 +5,7 @@ from __future__ import print_function
 from markdown import markdown
 from jinja2 import Template
 from bs4 import BeautifulSoup
+import mdx_math
 
 import sys, os, datetime, re, argparse
 
@@ -128,8 +129,10 @@ class Render(object):
             (basename, extension) = os.path.splitext(filename)
             html = '.'.join([basename, 'html'])
 
+        mathext = mdx_math.MathExtension(enable_dollar_delimiter=True)
+
         src = self.get_markdown_text()
-        body = markdown(src, extensions=['gfm'])
+        body = markdown(src, extensions=['gfm', mathext])
         rendered_html = self.render_html(body)
 
         self.write_html(html, rendered_html)

@@ -27,6 +27,6 @@ print "Dude"
 
 Here is some math
 
-$$ \pi = \frac{C}{d} $$
+$$ \pi = \frac{C_f}{d} $$
 
 And we're done!  Bye!
