@@ -1,6 +1,6 @@
 # md-note-tools
 
-CSS and JavaScript templates to use for rendering my markdown-based notes
+These are homebrewed templates and scripts I use for rendering my markdown-based notes.  They aren't really considered to be production quality.
 
 The `js/highlight.pack.js` and `css/github-highlight.css` code was custom
 rendered from [highlightjs.org][1].
