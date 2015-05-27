@@ -2,6 +2,29 @@
 
 These are homebrewed templates and scripts I use for rendering my markdown-based notes.  They aren't really considered to be production quality.
 
+## Usage
+
+    git clone https://github.com/indraniel/md-note-tools
+    cd md-note-tools
+        
+    # setup python environment
+    virtualenv /path/to/venv
+    source /path/to/venv/bin/activate
+    pip install -r python/requirements.txt
+        
+    # setup R environment
+    export R_LIBS=/path/to/rpkgs
+    ./R/install-packages.r
+        
+    # contruct static html files    
+    ./R/knit.r /path/to/note.Rmd
+    python python/html.py note.md
+        
+    # the "final" directory contains the static figures and html files
+    ls -al ./final
+    
+## NOTES
+
 The `js/highlight.pack.js` and `css/github-highlight.css` code was custom
 rendered from [highlightjs.org][1].
 
