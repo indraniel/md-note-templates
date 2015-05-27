@@ -34,6 +34,10 @@ The `css/github-markdown.css` stylesheet was based upon
 The static CSS and JS files are being served via [MaxCDN][3].  See [rawgit][4]
 for details on setting this up.
 
+## LICENSE
+
+BSD
+
 [1]: https://highlightjs.org/download/
 [2]: https://github.com/sindresorhus/github-markdown-css
 [3]: http://www.maxcdn.com/
