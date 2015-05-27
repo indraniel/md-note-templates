@@ -17,11 +17,11 @@ These are homebrewed templates and scripts I use for rendering my markdown-based
     ./R/install-packages.r
         
     # contruct static html files    
-    ./R/knit.r /path/to/note.Rmd
-    python python/html.py note.md
+    ./R/knit.r -o /path/to/final-output -i /path/to/note.Rmd
+    python python/html.py -o /path/to/final-output /path/to/note.md
         
-    # the "final" directory contains the static figures and html files
-    ls -al ./final
+The `/path/to/final-output` directory contains the static figures and html
+files.
     
 ## NOTES
 
