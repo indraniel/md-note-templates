@@ -1,6 +1,6 @@
 # md-note-tools
 
-These are homebrewed templates and scripts I use for rendering my analytical markdown-based notes.  They aren't really considered to be production quality.  A lot of polish is still needed, but they work for my ad-hoc cases so far.
+These are homebrewed templates and scripts I use for rendering my analytical markdown-based notes.  They aren't really considered to be production quality.  A lot of polish is still needed, but they work for my ad-hoc needs so far.
 
 ## USAGE
 
