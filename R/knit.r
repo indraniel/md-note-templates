@@ -1,5 +1,6 @@
 #!/usr/bin/env Rscript
 
+library(tools)
 library(optparse)
 library(knitr)
 
@@ -25,9 +26,17 @@ invisible(knit(opts$input))
 
 # move the output file to location of the original input directory
 basedir <- dirname(opts$input)
+origFile <- basename(opts$input)
+rootName <- file_path_sans_ext(origFile)
+mdFile <- paste(rootName, '.md', sep="")
+
 files <- list.files(getwd())
-index <- grep(".md", files)
-invisible(file.rename(file.path(getwd(), files[index]),
-         file.path(basedir, files[index])))
+index <- grep(mdFile, files)
+invisible(
+    file.rename(
+         from=file.path(getwd(), files[index]),
+         to=file.path(basedir, files[index])
+    )
+)
 
 #knit2html(file)
