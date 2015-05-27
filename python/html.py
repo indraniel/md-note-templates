@@ -89,8 +89,8 @@ class Render(object):
             <meta http-equiv="content-type" content="text/html; charset=UTF-8">
             <title>{{ title }}</title>
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-            <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/indraniel/md-note-tools/v0.1.1/css/github-markdown.css" />
-            <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/indraniel/md-note-tools/v0.1.1/css/github-highlight.css" />
+            <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/indraniel/md-note-tools/v0.1.2/css/github-markdown.css" />
+            <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/indraniel/md-note-tools/v0.1.2/css/github-highlight.css" />
           </head>
           <body>
             <article class="markdown-body">
@@ -110,7 +110,7 @@ class Render(object):
             <script type="text/javascript"
               src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
               </script>
-            <script src="https://cdn.rawgit.com/indraniel/md-note-tools/v0.1.1/js/highlight.pack.js" type="text/javascript"></script>
+            <script src="https://cdn.rawgit.com/indraniel/md-note-tools/v0.1.2/js/highlight.pack.js" type="text/javascript"></script>
             <script>hljs.initHighlightingOnLoad();</script>
           </body>
         </html>
