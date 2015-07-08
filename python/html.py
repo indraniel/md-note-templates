@@ -39,7 +39,7 @@ class Render(object):
                         break
 
                 if header_flag:
-                    (key, value) = line.split(':', 2)
+                    (key, value) = line.split(':', 1)
                     key = key.lower()
                     value = value.rstrip("\n")
                     value = value.strip(" ")
