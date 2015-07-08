@@ -95,7 +95,7 @@ class Render(object):
           <body>
             <article class="markdown-body">
               <div class="title">
-                <span>Updated: {{ date }}</span>
+                <span>Created: {{ date }}</span>
                 <h1>{{ title }}</h1>
               </div>
 
