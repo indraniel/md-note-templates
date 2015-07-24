@@ -39,7 +39,7 @@ setup(
     install_requires=packages,
     dependency_links=dependencies,
     author='Indraniel',
-    author_email='indraniel@gmail.com',
+    author_email='indraniel at gmail.com',
     packages=find_packages(),
     include_package_data=True,
     url='https://github.com/indraniel/md-note-tools',
