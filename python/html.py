@@ -137,7 +137,7 @@ class Render(object):
 
         self.write_html(html, rendered_html)
 
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-o", "--output-dir",
                         action="store", type=str, dest="outdir",
@@ -153,3 +153,6 @@ if __name__ == '__main__':
     if not os.path.exists(args.outdir):
         os.makedirs(args.outdir)
     r.generate_html(html=html)
+
+if __name__ == '__main__':
+    main()
