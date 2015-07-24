@@ -22,6 +22,14 @@ These are homebrewed templates and scripts I use for rendering my analytical mar
         
 The `/path/to/final-output` directory contains the static figures and html
 files.
+
+### PIP INSTALLATION
+
+You can install this package via python's `pip`:
+
+    pip -e git+https://github.com/mitya57/python-markdown-math@2454af2140fd9337b4fedcb9ff472d82ae64803f#egg=python_markdown_math-master
+    pip -e -e git+https://github.com/indraniel/md-note-tools@ecd5def5eb1445d8627fbfb34114dcfb520231c6#egg=md_note_tools-master
+In the pip installation, the python executable is named `gen-md`.  Within a virtualenv, the R scripts are placed at `/path/to/venv/src/md-note-tools/R` 
     
 ## NOTES
 
